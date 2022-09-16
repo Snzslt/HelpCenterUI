@@ -1,8 +1,5 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { Route } from "react-router-dom";
-import { useHistory } from "react-router-dom";
-import { Link } from "react-router-dom";
 import CompleteProfile from "../../CompleteProfile";
 import AccessDeniedPage from "../AccessDenied";
 import NotActiveUser from "../NotActiveUser";
@@ -13,11 +10,9 @@ import StudentProgramList from "../../StudentProgramList";
 import TeacherLanguageRequest from "../../TeacherLanguageRequest";
 import TeacherProgramList from "../../TeacherProgramList";
 export default function Content() {
-  let history = useHistory();
+
   // const { path, url } = useRouteMatch();
-  const dispatch = useDispatch();
-  const state = useSelector((state) => state);
-  const { userInof } = useSelector((state) => state.dashboard);
+
   return (
     <div className="main-panel">
       <div className="content-wrapper">

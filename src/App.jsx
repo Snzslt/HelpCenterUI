@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route} from "react-router-dom";
 import { useSelector } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/vendor/typicons/typicons.css";
@@ -13,7 +13,7 @@ import ChangePassword from "./screen/auth/ChangePassword";
 import NotFound from "./screen/NotFound/indxe";
 
 function App() {
-  const state = useSelector((state) => state);
+  //const state = useSelector((state) => state);
   const { userIsForgotPassword } = useSelector((state) => state.forgotPassword);
   return (
     <div className="container-scroller">

@@ -1,6 +1,5 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import {
   submitUpdateProfileForm,
@@ -13,7 +12,6 @@ import {
 export default function CompleteProfile() {
   const dispatch = useDispatch();
   let history = useHistory();
-  const state = useSelector((state) => state);
   const { firstName, lastName, gender, universityId, userUpdateProfile } =
     useSelector((state) => state.dashboard);
   let classMessage = userUpdateProfile.success

@@ -1,12 +1,10 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {
-  let history = useHistory();
-  const dispatch = useDispatch();
-  const state = useSelector((state) => state);
+
   const { userInof } = useSelector((state) => state.dashboard);
   const renderSidebarItemMenu = () => {
     let menuItem = [
@@ -72,7 +70,7 @@ export default function Sidebar() {
         ),
       },
     ];
-
+    
     return menuItem.map((item) => {
       if (item.key === userInof.role) {
         return item.component;

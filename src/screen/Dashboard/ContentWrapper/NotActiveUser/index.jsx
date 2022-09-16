@@ -1,12 +1,7 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import notActive from "../../../../assets/images/not-active.svg";
 export default function NotActiveUser() {
-  let history = useHistory();
-  const dispatch = useDispatch();
-  const state = useSelector((state) => state);
   const { userInof} =
     useSelector((state) => state.dashboard);
   if(userInof.activated === "not_active"){

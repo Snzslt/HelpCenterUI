@@ -1,13 +1,11 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { Link } from "react-router-dom";
 import Content from "./Content";
 import Sidebar from "./Sidebar"
 export default function ContentWrapper() {
   let history = useHistory();
-  const dispatch = useDispatch();
-  const state = useSelector((state) => state);
+
   const {  userIsForgotPassword } = useSelector(
     (state) => state.forgotPassword
   );
