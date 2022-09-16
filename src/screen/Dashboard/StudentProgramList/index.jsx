@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import {
   fetchAllLanguagesList,
@@ -12,11 +11,10 @@ import UserItem from "./UserItem";
 
 export default function StudentProgramList() {
   const dispatch = useDispatch();
-  let history = useHistory();
-
-  const state = useSelector((state) => state);
+  
   const { requestProgramList ,userInof } = useSelector((state) => state.dashboard);
-  useEffect(async () => {
+  useEffect(async() => {
+  
     await dispatch(fetchProgramListById());
     await dispatch(fetchAllStudyList());
     await dispatch(fetchAllLanguagesList());

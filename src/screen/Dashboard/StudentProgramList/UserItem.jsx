@@ -1,25 +1,18 @@
 import React, { useState } from "react";
 import { Button, Modal, NavDropdown } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
 import {
-  feachAllUsersList,
+ 
   submitActiveUserByID,
   submitDeleteUserByID,
-  submitLoguot,
-  submitUpdateProfileForm,
-  updateFirstName,
-  updateLastName,
-  updateUniversityId,
-  updateUserGender,
+  
 } from "../../../services/actions/dashboard";
 import { isEmpty } from "../../../services/function";
 
 export default function UserItem(props) {
   const dispatch = useDispatch();
-  let history = useHistory();
-  const state = useSelector((state) => state);
+
+
   const [showModal, setshowModal] = useState(false);
   const [modalstatus, setmodalstatus] = useState("");
   const {} = useSelector((state) => state.dashboard);
@@ -30,9 +23,9 @@ export default function UserItem(props) {
     return firstName + " " + lastName;
   };
   const requestStatus = (status) => {
-    if (status == "Unknown") {
+    if (status === "Unknown") {
       return <div className="badge badge-info">Unknown</div>;
-    } else if(status == "accept") {
+    } else if(status === "accept") {
       return <div className="badge badge-success">Accept</div>;
     }else {
       return <div className="badge badge-danger">Reject</div>;
@@ -51,7 +44,7 @@ export default function UserItem(props) {
     setshowModal(false);
   };
   const renderModalBtn = () => {
-    if (modalstatus == "active") {
+    if (modalstatus === "active") {
       return (
         <>
           <Button variant="secondary" onClick={handleClose}>
@@ -75,7 +68,7 @@ export default function UserItem(props) {
     );
   };
   const renderModalHeader = ()=>{
-    if (modalstatus == "active") {
+    if (modalstatus === "active") {
       return (
        <>
         do you hav active this user "{props.requestData.email}"?
