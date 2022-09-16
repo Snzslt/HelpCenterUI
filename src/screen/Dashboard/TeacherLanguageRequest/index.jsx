@@ -92,8 +92,8 @@ export default function TeacherLanguageRequest() {
       <div className="col-12 grid-margin">
         <div className="card">
           <div className="card-body">
-            <h4 className="card-title">Add New Request</h4>
-            <p className="card-description">program info</p>
+            <h4 className="card-title">Add Your Favorite Languages</h4>
+            <p className="card-description"></p>
 
             <div className="row">
               <div className="col-12 col-md-12 form-group">

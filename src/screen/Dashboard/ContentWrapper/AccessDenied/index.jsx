@@ -29,7 +29,7 @@ export default function AccessDeniedPage() {
               </div>
               <div className="card-description">
                 <h5 className="text-center my-5">
-                  To use the site features, please complete your profile
+                  To use the website's features, please complete your profile first!
                 </h5>
                 <div className="row justify-content-center">
                   <div className="col-10 col-md-4">

@@ -27,7 +27,7 @@ export default function Sidebar() {
           <li className="nav-item">
             <Link className="nav-link" to="/dashboard/add-new-request">
               <i className="typcn icon typcn-pencil menu-icon"></i>
-              <span className="menu-title">Add New Program</span>
+              <span className="menu-title">Add New Request</span>
             </Link>
           </li>
         ),
@@ -41,7 +41,7 @@ export default function Sidebar() {
               to="/dashboard/student-program-request-list"
             >
               <i className="typcn icon typcn-th-menu-outline menu-icon"></i>
-              <span className="menu-title">Program Request List</span>
+              <span className="menu-title">Help Requests List</span>
             </Link>
           </li>
         ),
@@ -52,7 +52,7 @@ export default function Sidebar() {
           <li className="nav-item">
             <Link className="nav-link" to="/dashboard/teacher-language-request">
               <i className="typcn icon typcn-edit active-before menu-icon"></i>
-              <span className="menu-title">Teacher Languages</span>
+              <span className="menu-title">Languages</span>
             </Link>
           </li>
         ),
@@ -66,7 +66,7 @@ export default function Sidebar() {
               to="/dashboard/teacher-program-request-list"
             >
               <i className="typcn icon typcn-th-menu-outline menu-icon"></i>
-              <span className="menu-title">Program Request List</span>
+              <span className="menu-title">Request's List</span>
             </Link>
           </li>
         ),

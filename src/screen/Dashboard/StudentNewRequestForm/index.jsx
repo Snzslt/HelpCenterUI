@@ -154,7 +154,7 @@ export default function StudentNewRequestForm() {
               </div>
               <div className="row">
                 <div className="col-12 col-md-12 form-group">
-                  <label for="language">study</label>
+                  <label for="language">Program</label>
                   <div className="row">
                   {createStudyList()}
                   </div>

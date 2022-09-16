@@ -50,10 +50,10 @@ export default function TeacherProgramList() {
                   <tr>
                     <th className="ml-5">ID</th>
                     <th>Student ID</th>
-                    <th>teacher name</th>
-                    <th>Program Time </th>
-                    <th>Availabilities</th>
-                    <th>program comment</th>
+                    <th>Teacher's name</th>
+                    <th>Avalibility </th>
+                    <th>Type</th>
+                    <th>Student's Comment</th>
                     <th>Request Status</th>
                     <th>Actions</th>
                   </tr>

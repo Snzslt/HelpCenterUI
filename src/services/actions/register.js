@@ -219,7 +219,7 @@ export const submitRegisterForm = (
                     dispatch(updateResponseRegister({
                         token: "",
                         isRegister: false,
-                        message: "An error occurred while register in",
+                        message: error.message,
                         show: true,
                     }));
                 });
